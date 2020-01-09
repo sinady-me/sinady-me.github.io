@@ -1,0 +1,180 @@
+.movie
+			{
+				background-image: url(http://news.xtu.edu.cn/template/front/images/indextop_03.jpg);
+				background-size: 343px 355px;
+				width: 343px;
+				height: 355px;
+				float: left;
+			}
+			.box {
+      width: 300px;
+      height: 230px;
+      border: 1px solid #ccc;
+      margin: 20px ;
+      margin-top:65px ;
+    }
+    .inner{
+      width: 300px;
+      height: 230px;
+      position: relative;
+      overflow: hidden;
+    }
+    .inner img{
+      width: 300px;
+      height: 230px;
+      vertical-align: top
+    }
+    ul {
+      width: 1000%;
+      position: absolute;
+      list-style: none;
+      left:0;
+      top: 0;
+    }
+    .inner li{
+      float: left;
+
+    }
+
+    ol {
+      position: absolute;
+      height: 20px;
+      right: 100px;
+      bottom: 20px;
+      text-align: center;
+    }
+    ol li{
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      line-height: 20px;
+      background-color: #fff;
+      margin: 5px;
+      cursor: pointer;
+
+    }
+    ol .current{
+      background-color:orange;
+    }
+    #arr{
+      display: none;
+    }
+    #arr span{
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      left: 5px;
+      top: 50%;
+      margin-top: -20px;
+      background: #fff;
+      cursor: pointer;
+      line-height: 40px;
+      text-align: center;
+      font-weight: bold;
+      font-family: '黑体';
+      font-size: 30px;
+      color: #000;
+      opacity: 0.5;
+      border: 1px solid #fff;
+    }
+    #arr #right {
+      right: 5px;
+      left: auto;
+    }
+    input
+    {
+    display: inline-block;
+    font-size: 13px;
+    padding: 7px 8px;
+    margin-left: 60px;
+    margin-top:6px;
+    color: #555555;
+    vertical-align: middle;
+    background-color: #ffffff;
+    background-image: none;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    
+}
+    .newshead
+    {
+    	width:557px ;
+    	height: 355px;
+    	background-image: url(http://news.xtu.edu.cn/template/front/images/indextop_04.jpg);
+    	background-size: 557px 355px;
+    	float: left;
+    }
+    .newshead1
+    {
+    	width: 370px;
+    	height: 310px;
+    	margin-left:10px ;
+    	float: left;
+    }
+    #xangxi {
+    margin-left: 0cm;
+    margin-right: 0cm;
+    margin-top: 0cm;
+    margin-bottom: 0cm;
+    text-indent: 2em;
+    font-size: 11px;
+    text-align: left;
+    word-break: break-all;
+    font-family: 瀹嬩綋;
+    letter-spacing: 0.2px;
+    line-height: 150%;
+}
+#redtitle{
+  width: 100%;text-align:center; font-size:20px; line-height:110%;  font-weight:bold; color:#FF0000;padding-top:15px; margin-bottom:0px;margin:auto;
+}
+.list
+{
+    font-size: 12px;
+    font-family: 宋体;
+    color: #333333;
+    display: table;
+    border-color: grey;
+}
+.list td{ 
+  height:18px;
+  font-size:12px;  
+}
+.list a{  
+  font-size:12px;
+  color:#282828;
+  text-decoration: none;
+}
+.list a:hover{
+	text-decoration: underline;
+}
+#newshead2
+{
+	width:140px;
+	height:300px;
+    float:right; 
+    margin-right:22px ;
+   
+}
+#newshead2title
+{
+ text-align:center;
+	font-size: 13px; color: #FFFFFF; font-weight: bold;
+	
+}
+#newshead2tt
+{
+	background-color:#FFFFFF;
+	padding-top:3px;
+	text-align:center;
+	line-height: 175%;
+	height: 246px;
+}
+#newshead2tt a
+{
+	text-decoration: none;color: #000000;font-family: 宋体;
+}
+#newshead2tt a:hover
+{
+	text-decoration: underline;
+	
+}

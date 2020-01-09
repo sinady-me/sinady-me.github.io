@@ -1,0 +1,153 @@
+.one
+{
+	background-image: url(http://news.xtu.edu.cn/template/front/images/news_table_bg.jpg);
+	width: 710px;
+	height:282px ;
+	background-size: 710px ;
+	float: left;
+}
+.right
+{
+	float: right;
+	width: 190px;
+	
+}
+#newpaper
+{
+height:30px;
+margin-right: 20px;
+background-image: url('http://news.xtu.edu.cn/template/front/images/E-paper-1.gif');
+background-size:188px 30px ;
+font-size: 14px; 
+color: #007DB7; 
+font-weight: bold; 
+font-family: 宋体;
+text-align: center;
+}
+#newspapercc{
+font-size: 12px; 
+width:189px;
+height:240px;
+background-image: url('http://news.xtu.edu.cn/template/front/images/E-paper-2.gif');
+background-size: 189px 240px;
+}
+#newspaperbt
+{
+background-image: url('http://news.xtu.edu.cn/template/front/images/E-paper-3.gif');
+background-size:190px 30px ;
+}
+#video
+{
+font-size: bold; 
+color: #ffffff; 
+font-weight: bold; 
+width:188px;
+height:35px;
+background-image: url('http://news.xtu.edu.cn/template/front/images/video-1.gif');
+background-size: 188px;
+text-align: center; 
+}
+#video a
+{
+font-size: 14px; 
+color: #ffffff; 
+font-weight: bold;
+display:block; 
+margin-top:13px;
+text-decoration: none;
+}
+#video a:hover
+{
+	text-decoration: underline;
+}
+#videoct
+{
+	background-image: url('http://news.xtu.edu.cn/template/front/images/E-paper-2.gif');
+	background-size: 188px 112px;
+	width: 190px;
+		text-align: center;
+	
+}
+#videott
+{
+	background-image: url('http://news.xtu.edu.cn/template/front/images/E-paper-3.gif');
+background-size:189px 30px ;
+}
+#newsclass-title{
+font-size: 15px; color: #ca1617; font-weight: bold;text-align: left;margin-left:80px;
+}
+#topicabtract1{
+	text-align:left;
+	margin-left:9px; margin-right:0cm;
+	margin-top: 0px;margin-bottom:1;
+	letter-spacing: 0.2px;	
+	line-height: 150%;
+	border:1px solid #A8E3EC; position: relative; 
+	width: 320px;
+	height: 70px;
+     float:left; padding-left:6px; padding-right:1px; padding-top:1px; padding-bottom:1px ;
+    font-size: 11px;
+    font-family: Verdana;
+    color: #333333;
+}
+.table02
+{
+height:160px;
+  font-family: 宋体;
+
+}
+.listmore td{ 
+  height:18px;
+  font-size:12px;  
+  font-family: 宋体;
+}
+.listmore a{  
+  font-size:12px;
+  color:#282828;
+  text-decoration: none;
+}
+.listmore a:hover{
+	  text-decoration: underline;
+}
+.table01
+{
+width:96%;
+  margin-left:5px ;
+}
+
+#Survey-center{
+font-size: 12px; 
+width:189px;
+height:170px;
+background-image: url('http://news.xtu.edu.cn/template/front/images/E-paper-2.gif');
+background-size: 189px 170px;
+}
+#topicabtract{
+	mso-style-parent:"";
+	font-size:11px;
+	text-align:left;
+	word-break:break-all;
+	font-family:"瀹嬩綋";
+	margin-left:0cm; margin-right:0cm;
+	margin-top: 0px;margin-bottom:0px;
+	letter-spacing: 0.2px;	
+	line-height: 150%;
+	border:1px solid #A8E3EC; position: relative; 
+	width: 210px;
+	height: 75px;
+  float:left; padding-left:1px; padding-right:1px; padding-top:1px; padding-bottom:1px 
+}
+#topicpicture{
+  border:2px solid #A5CFEF; position: relative; 
+	width: 115px;
+	height: 75px;
+  float:left; padding-left:1px; padding-right:1px; padding-top:1px; padding-bottom:1px 
+}
+.two
+{
+	background-image: url(http://news.xtu.edu.cn/template/front/images/news_table_bg.jpg);
+	width: 710px;
+	height:290px ;
+	background-size: 710px 290px ;
+	float: left;
+}
