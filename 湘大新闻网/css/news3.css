@@ -1,0 +1,28 @@
+.foot
+{
+	width: 900px;
+	height:40px;
+	background-image: url(http://news.xtu.edu.cn/template/front/images/link-1.gif);
+	background-size: 900px 40px;
+}
+.web
+{
+	width: 900px;
+	height:47px;
+	background-image: url(http://news.xtu.edu.cn/template/front/images/link-2.gif);
+	background-size: 900px 47px;
+}
+#mag
+{
+	text-align: center;
+    font-size: 13px;
+    font-family: 宋体;
+    color: #000088;
+    margin-top:0px ;
+    text-decoration: none;
+    margin-left: 5px;
+}
+#mag a:hover
+{
+	text-decoration: underline;
+}
