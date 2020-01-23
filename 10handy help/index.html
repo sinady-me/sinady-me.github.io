@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />  
+		<title>随手帮官网</title>
+		<link rel="stylesheet" type="text/css" href="font.css">
+		<script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.min.js"></script>
+		<script>
+$(function(){
+	$(window).on('scroll', function(){
+		if($(window).scrollTop() >500){
+			$('.header').removeClass('large').addClass('small');
+		} else {
+			$('.header').removeClass('small').addClass('large');
+		}
+	});
+});
+</script>
+<style>
+@font-face {
+ font-family: '逐浪雅宋体Regular';
+ src: url('逐浪雅宋体.eot');
+ src: local('逐浪雅宋体 Regular'),
+        local('逐浪雅宋体'),
+        url('逐浪雅宋体.woff') format('HYQingKongTiW'),
+        url('逐浪雅宋体.otf') format('truetype'),
+        url('逐浪雅宋体.svg#逐浪雅宋体') format('svg');
+} 
+@font-face {
+ font-family: '汉仪乐喵体Regular';
+ src: url('汉仪乐喵体.eot');
+ src: local('汉仪乐喵体 Regular'),
+        local('汉仪乐喵体'),
+        url('汉仪乐喵体.woff') format('HYQingKongTiW'),
+        url('汉仪乐喵体.ttf') format('truetype'),
+        url('汉仪乐喵体.svg#汉仪乐喵体') format('svg');
+} 
+@font-face {
+ font-family: '华康手札体-W5Regular';
+ src: url('华康手札体-W5.eot');
+ src: local('华康手札体-W5 Regular'),
+        local('华康手札体-W5'),
+        url('华康手札体-W5.woff') format('HYQingKongTiW'),
+        url('华康手札体-W5.ttf') format('truetype'),
+        url('华康手札体-W5.svg#华康手札体-W5') format('svg');
+} 
+@font-face {
+ font-family: '华康饰艺体W7-GBRegular';
+ src: url('华康饰艺体W7-GB.eot');
+ src: local('华康饰艺体W7-GB Regular'),
+        local('华康饰艺体W7-GB'),
+        url('华康饰艺体W7-GB.woff') format('HYQingKongTiW'),
+        url('华康饰艺体W7-GB.ttc') format('truetype'),
+        url('华康饰艺体W7-GB.svg#逐浪雅宋体') format('svg');
+} 
+@font-face {
+ font-family: 'Gregory PackagingRegular';
+ src: url('Gregory Packaging.eot');
+ src: local('Gregory Packaging Regular'),
+        local('Gregory Packaging'),
+        url('Gregory Packaging.woff') format('HYQingKongTiW'),
+        url('Gregory Packaging.otf') format('truetype'),
+        url('Gregory Packaging.svg#Gregory Packaging') format('svg');
+} 
+* { margin: 0; padding: 0;}
+.menu .header { position: fixed;left: 0; top: 0; width: 100%; background-color: rgb(241,220,197,0.5) ;z-index: 20px;}
+.menu .inner { width: 880px; margin: auto;overflow: hidden; zoom: 1;}
+.menu h1 { float: left;}
+.menu h1 img { display: block; border: 0;}
+.menu h2 { float: right;}
+.menu h2 img { display: block; border: 0;margin-top:10px ;margin-left:20px ;}
+.menu h2 img:hover
+{
+	margin-left:20px ;
+	margin-top:7px ;
+	width: 40px;
+	height: 60px;
+}
+.menu .nav { float: right; list-style-type: none; font-family: "逐浪雅宋体Regular";}
+.menu .nav li { float: left; margin-left: 5px;}
+.menu .nav a { float: left; color:  #999999; text-decoration: none;border-bottom:solid;border-bottom-color:transparent;}
+.menu .nav a:hover { background-color:  #FFEBCD; border-radius: 10px; border-bottom:3px solid;border-bottom-color:  #EEE8AA;}
+
+.menu .large .inner { padding: 10px 0;}
+.menu .large h1 img { height: 60px;}
+.menu .large h2 img { height: 40px;}
+.menu .large .nav { padding-top: 10px;}
+.menu .large .nav a { height: 40px; padding: 0 20px; line-height: 40px; font-size: 18px;}
+
+.menu .small .inner { padding: 10px 0;}
+.menu .small h1 img { height:40px;}
+.menu .small h2 img { height:30px;margin-top:5px;margin-left:20px }
+.menu .small h2 img:hover
+{
+	margin-left:20px ;
+	margin-top:0px ;
+	width: 30px;
+	height: 35px;
+}
+.menu .small .nav { padding-top: 3px;}
+.menu .small .nav a { height: 28px; padding: 0 15px; line-height: 28px; font-size: 15px;}
+.menu .header, .menu .inner, .menu a, .menu img, .menu li { transition: all 1s; -moz-transition: all 1s; -webkit-transition: all 1s; -o-transition: all 1s;}
+
+
+
+ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,dd,input{margin:0;padding:0;}
+body{font-size:12px; }
+img{border:none;}
+li{list-style:none;}
+input,select,textarea{outline:none;}
+textarea{resize:none;}
+a{text-decoration:none;}
+
+
+.banner{width:880px; height:400px; position:relative; overflow:hidden;}
+.banner-btn{ display:none;}
+.banner-btn a{ display:block; line-height:40px; position:absolute;top:190px; width:40px; height:40px;background-color: #000; opacity:0.3; filter:alpha(opacity=30) color: rgb(255, 255, 255);overflow: hidden; z-index:4;}
+.prevBtn{left:5px;}
+.nextBtn{right:5px;}
+.banner-img{ font-size:0; *word-spacing:-1px; letter-spacing: -3px; position:relative;}
+.banner-img li{ display:inline-block;*display:inline;*zoom:1;vertical-align: top; letter-spacing: normal;word-spacing: normal; font-size:12px;}
+.banner i{ background:url(http://gtms01.alicdn.com/tps/i1/T1szNBFzlmXXX8QSDI-400-340.png)  no-repeat; width: 15px;height: 23px; cursor:pointer;margin: 8px 0 0 12px; display:block;}
+.banner .nextBtn i{ background-position:-200px -24px;}
+.banner .prevBtn i{ background-position:-200px 0px;}
+
+.banner-circle{ position:absolute; left:50%; bottom: 15px;height: 13px;text-align: center;font-size: 0;border-radius: 10px; background:rgba(255,255,255,0.3); filter:alpha(opacity:30); }
+.banner-circle li{ border-radius: 10px; margin:2px; display: inline-block; display: -moz-inline-stack; vertical-align: middle;zoom: 1; }
+.banner-circle li a{ display: block;padding-top: 9px;width: 9px;height: 0;border-radius: 50%; background: #B7B7B7;overflow: hidden;}
+.banner-circle .selected a{ background:#F40; }
+</style>
+
+<script src="js/jquery.min.js">
+</script>
+
+<script>
+$(function(){
+        var $banner=$('.banner');
+        var $banner_ul=$('.banner-img');
+        var $btn=$('.banner-btn');
+        var $btn_a=$btn.find('a')
+        var v_width=$banner.width();
+        
+        var page=1;
+        
+        var timer=null;
+        var btnClass=null;
+
+        var page_count=$banner_ul.find('li').length;
+        
+        var banner_cir="<li class='selected' href='#'><a></a></li>";
+        for(var i=1;i<page_count;i++){
+              
+                banner_cir+="<li><a href='#'></a></li>";
+                }
+        $('.banner-circle').append(banner_cir);
+        
+        var cirLeft=$('.banner-circle').width()*(-0.5);
+        $('.banner-circle').css({'marginLeft':cirLeft});
+        
+        $banner_ul.width(page_count*v_width);
+        
+        function move(obj,classname){
+            
+        if(!$banner_ul.is(':animated')){
+                if(classname=='prevBtn'){
+                        if(page==1){
+                                        $banner_ul.animate({left:-v_width*(page_count-1)});
+                                        page=page_count; 
+                                        cirMove();
+                        }
+                        else{
+                                        $banner_ul.animate({left:'+='+v_width},"slow");
+                                        page--;
+                                        cirMove();
+                        }        
+                }
+                else{
+                        if(page==page_count){
+                                        $banner_ul.animate({left:0});
+                                        page=1;
+                                        cirMove();
+                                }
+                        else{
+                                        $banner_ul.animate({left:'-='+v_width},"slow");
+                                        page++;
+                                        cirMove();
+                                }
+                        }
+                }
+        }
+        
+        function cirMove(){
+               
+                $('.banner-circle li').eq(page-1).addClass('selected')
+                                                                                                .siblings().removeClass('selected');
+        }
+        
+        $banner.mouseover(function(){
+                $btn.css({'display':'block'});
+                clearInterval(timer);
+                                }).mouseout(function(){
+                $btn.css({'display':'none'});                
+                clearInterval(timer);
+                timer=setInterval(move,3000);
+                                }).trigger("mouseout");
+
+        $btn_a.mouseover(function(){
+                
+                        $(this).animate({opacity:0.6},'fast');
+                        $btn.css({'display':'block'});
+                         return false;
+                }).mouseleave(function(){
+                        $(this).animate({opacity:0.3},'fast');
+                        $btn.css({'display':'none'});
+                         return false;
+                }).click(function(){
+                        
+                        btnClass=this.className;
+                        clearInterval(timer);
+                        timer=setInterval(move,3000);
+                        move($(this),this.className);
+                });
+                
+        $('.banner-circle li').live('click',function(){
+                        var index=$('.banner-circle li').index(this);
+                        $banner_ul.animate({left:-v_width*index},'slow');
+                        page=index+1;
+                        cirMove();
+                });
+});
+</script>
+<style>
+.change1
+{
+	width:140px;
+	height: 100px;
+	margin-top:30px ;
+	margin-bottom:30px ;
+	float: left;
+	cursor: pointer;
+}
+.change2
+{
+	margin-right: 45px;
+}
+.kauidi
+{
+	width:880px;
+	height: 50px;
+	font-size: 40px;
+	background-color: rgb(244,215,196,0.6);
+	font-family:Gregory PackagingRegular ;
+	float: left;
+	margin-bottom:10px ;
+	color:  #F2630A;
+}
+.kuai
+{
+	width:880px0px;
+	height: 400px;
+	float:left;
+	border-bottom: 3px solid;
+	border-color: transparent;
+	box-shadow: #CBE1ED 5px;
+	border-radius:5px ;
+	 background-image: linear-gradient(white , rgb(245,245,243,1));
+	  transition: border 3s;
+    -webkit-transition: border 3s;
+    cursor: pointer;
+}
+.kuai:hover
+{
+	border-color :  #EDEDED;
+}
+.kauidi0
+{
+	width:500px;
+	height:397px;
+}
+.kauidi1
+{
+	width:500px;
+	height:87px;
+	float: left;
+	color:  #F2630A;
+	text-align: center;
+	
+}
+.kuaidi2
+{
+	height: 398px;
+	width: 380px;
+	float: right;
+	color:  #F2630A;
+	text-align: center;
+}
+.kd{
+	height:400px ;
+	width: 500px;
+	float: left;
+}
+
+.waimai
+{
+	width:880px;
+	height: 50px;
+	font-size: 40px;
+	background-color: rgb(244,215,196,1);
+	font-family:Gregory PackagingRegular ;
+	text-align: center;
+	float: left;
+	margin-bottom:10px ;
+	margin-top:20px ;
+	color:  #F2630A;
+}
+.wai
+{
+	width:880px0px;
+	height: 400px;
+	float:right;
+	border-bottom: 3px solid;
+	border-color: transparent;
+	box-shadow: #CBE1ED 5px;
+	border-radius:5px ;
+	 background-image: linear-gradient(white , rgb(245,245,243,0.7));
+	  transition: border 3s;
+    -webkit-transition: border 3s;
+    cursor: pointer;
+}
+.wai:hover
+{
+	border-color :  #EDEDED;
+}
+.waimai0
+{
+	width:500px;
+	height:397px;
+}
+.waimai1
+{
+	width:500px;
+	height:87px;
+	float: right;
+	color:  #F2630A;
+	text-align: center;
+	
+}
+.waimai2
+{
+	height: 398px;
+	width: 380px;
+	float: left;
+	color:  #F2630A;
+	text-align: center;
+}
+.wm{
+	height:400px ;
+	width: 500px;
+	float: right;
+}
+.end
+{
+	width:880px;
+	height: 200px;
+	background-color: #ecf0f1;
+	float: left;
+	text-align: center;
+}
+.div
+{
+	width: 200px;
+	margin-right: 30px;
+	height: 200px;
+	float: left;
+}
+</style>
+
+	</head>
+	<body>
+		<body class="menu">
+<div class="header large">
+	<div class="inner">
+		<h1><a href=""><img src="img/商标2.png" ></a></h1>
+		<h2><a href="https://pengliang0105.github.io/10sign/"target="_blank"><img src="img/ae5c72efd4f402eca5ca460f8cdc3ef0.png" ></a></h2>
+		<ul class="nav">
+			<li><a href="#cb">产品区</a></li>
+			<li><a  href="https://pengliang0105.github.io/10submit/"  target="_blank">订单区</a></li>
+			<li><a  href="https://pengliang0105.github.io/9work/" target="_blank">介绍区</a></li>
+			<li><a  href="#" >反馈区</a></li>
+		</ul>
+		<div style="width: 50px;"></div>
+	</div>
+</div>
+
+<script>
+$(function(){
+	$(window).on('scroll', function(){
+		if($(window).scrollTop() > 500){
+			$('.header').removeClass('large').addClass('small');
+		} else {
+			$('.header').removeClass('small').addClass('large');
+		} 
+	});
+});
+</script>
+
+<div style="width: 880px;background-color: ;margin: auto;margin-top: 80px;height: 1750px;">
+<div align="center" style="width:880px; margin:0 auto;">
+<div class="banner">
+	<div class="banner-btn">
+		<a href="javascript:;" class="prevBtn"><i></i></a>
+		<a href="javascript:;" class="nextBtn"><i></i></a>
+	</div>
+	<ul class="banner-img">
+		<li><a href="#"><img src="img/未标题-1.jpg"width="880px"height="400px"></a></li>
+		<li><a href="#"><img src=" img/未标题-3.jpg"width="880px"height="400px"></a></li>
+		<li><a href="#"><img src="img/未标题-2.jpg"width="880px"height="400px"></a></li>
+		
+	</ul>
+	<ul class="banner-circle"></ul>
+</div>
+</div><span id="cb"></span>
+<div class="change1 change2"><img src="img/批注 2019-11-30 214115.png"width="140px"height="110px"></div>
+<div class="change1 change2"><img src="img/批注 2019-11-30 213945.png"width="140px"height="110px"></div>
+<div class="change1 change2"><img src="img/批注 2019-11-30 214037.png"width="140px"height="110px"></div>
+<div class="change1 change2"><img src="img/批注 2019-11-30 213659.png"width="140px"height="110px"></div>
+<div class="change1"><img src="img/批注 2019-11-30 214219.png"width="140px"height="110px"></div>
+
+
+<div class="kauidi">d&nbsp;e&nbsp;l&nbsp;i&nbsp;v&nbsp;e&nbsp;r</div>
+<div class="kuai">
+	<div class="kd">
+<div class="kauidi0"><img src='img/未标题-5.jpg'height="300px"width="500px">
+<br />
+<br />
+<div class="kauidi1">
+<font style="font-family: 逐浪雅宋体Regular; font-size: 30px; font-weight: bold;color: #404040;">代&nbsp;取&nbsp;快&nbsp;递<br>就&nbsp;找&nbsp;随&nbsp;手&nbsp;帮</font>
+</div>
+</div>
+</div>
+<div class="kuaidi2">
+<br />
+<font style="font-family:华康手札体-W5Regular; font-size: 20px; font-weight:200;color:  #999999;"><br>想在寝室收快递吗?<br><br>想一个手机解决快递难题吗？<br><br>只需提供快递截图，填写收货地址<br><br>
+<font style="font-family: 逐浪雅宋体Regular; font-size: 30px; font-weight: bold;color: #404040; margin-top:10px ;">随&nbsp;手&nbsp;帮</font><br /><br>替你取快递</font>
+<br><br>
+<button style="font-size:30px;font-family:汉仪乐喵体Regular ;background-color: rgb(252,251,251,0.3);border-color: white;cursor: pointer;outline: none;width: 200px;height: 40px;border:0px;border-radius:5px;box-shadow: 0px 5px 10px 5px rgba(74,115,255,0.1);">点&nbsp;击&nbsp;下&nbsp;单</button>
+</div>
+</div>
+
+<div class="waimai">r&nbsp;u&nbsp;n &nbsp;&nbsp;&nbsp;e&nbsp;r&nbsp;r&nbsp;a&nbsp;n&nbsp;d&nbsp;s</div>
+<div class="wai">
+	<div class="wm">
+<div class="waimai0"><img src='img/58620f7ae381b.jpg'height="400px"width="500px">
+<br />
+<br />
+</div>
+</div>
+<div class="waimai2">
+	<br />
+<font style="font-family:华康手札体-W5Regular; font-size: 20px; font-weight:200;color:  #999999;"><br>帮我买?<br><br>帮我送？<br><br>你想要，我来跑<br><br>
+<font style="font-family:逐浪雅宋体Regular; font-size: 30px; font-weight: bold;color: #404040; margin-top:10px ;">随&nbsp;手&nbsp;帮</font><br /><br>跑腿办事</font>
+<br><br>
+<button style="font-size:30px;font-family:汉仪乐喵体Regular ;background-color: rgb(252,251,251,0.3);border-color: white;cursor: pointer;outline: none;width: 200px;height: 40px;border:0px;border-radius:5px;box-shadow: 0px 5px 10px 5px rgba(74,115,255,0.1);">点&nbsp;击&nbsp;下&nbsp;单</button>
+</div>
+</div>
+<div style="width: 880px;height: 30px;float: left;"></div>
+<div class="end">
+     <div class="div">
+     	<div style="width: 200px;height: 10px;"></div>
+     	<font style="font-family: '微软雅黑';color: #333333;font-size: 20px;">关注我们</font>
+     	<div style="width: 200px;height: 20px;"></div>
+     	<font style="font-family: '微软雅黑';color: #747B81;font-size: 15px;">微信公众号<br /><br />@随手帮 <br><br></font>
+         <font style="font-family: '微软雅黑';color: #747B81;font-size: 15px;">聚集地群号<br /><br />4304242019<br></font>
+     </div>
+      <div class="div">
+     	<div style="width: 200px;height: 10px;"></div>
+     	<font style="font-family: '微软雅黑';color: #333333;font-size: 20px;">加入我们</font>
+     	<div style="width: 200px;height: 20px;"></div>
+     	<font style="font-family: '微软雅黑';color: #747B81;font-size: 15px;">无需成本<br><br>
+           随手赚钱<br /><br />不用犹豫<br></font>
+     </div>
+      <div class="div">
+     	<div style="width: 200px;height: 10px;"></div>
+     	<font style="font-family: '微软雅黑';color: #333333;font-size: 20px;">联系我们</font>
+     	<div style="width: 200px;height: 20px;"></div>
+     	<font style="font-family: '微软雅黑';color: #747B81;font-size: 15px;">应用开放接入<br /><br />客户咨询反馈 <br><br>商务合作<br /><br /></font>
+     	<br />
+     </div>
+     <img  src="img/商标2.png"style="margin-right:80px;margin-top:50px;width: 100px;height: 100px;float: right;" />
+</div>
+
+
+
+
+</div>
+</body>
+</html>
